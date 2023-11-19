@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Berechner</title>
+    <link rel="stylesheet">
+    <script src="bmi.js"></script>
+    <link rel="icon"  href="favicon-32x32.png" type="image/png">
+
+
+</head>
+
+<head>
+
+
+
+
+    <style>
+    .box-1{
+    background-color: #DDDDDD;
+    box-shadow: 0px 0px 20px #DDDDDD;
+    border-color: #002277;
+    color: #000066;
+    margin: auto;
+    width: 420px;
+    height: 580px;
+    border-radius: 20px;
+    }
+
+    .box-2{
+    background-color: #DDDDDD;
+    box-shadow: 0px 0px 2px #DDDDDD;
+    color: #000066;
+    margin: auto;
+    width: 700px;
+    height: 480px;
+    border-radius: 20px;
+
+    }
+
+    .box-2{
+    visibility: hidden;
+
+    }
+
+    .box-1:hover ~ .box-2{
+        visibility: visible;
+
+
+    }
+
+    .box-3{
+    background-color: #002277;
+    box-shadow: 0px 0px 20px #002277;
+    margin: auto;
+    width: 1000px;
+    height: 1200px;
+    border-radius:40px;
+    }
+
+
+    input{
+    border: none;
+    border-bottom: 1.2px solid #002277;
+    background-color: #DDDDDD;
+    text-align: center;
+    width: 180px;
+    font-size: 25px;
+    }
+
+    select{
+    border: none;
+    background-color: #DDDDDD;
+    font-size: 22px;
+    text-align: center;
+    }
+
+    button{
+        width: 220px;
+    height: 40px;
+    border-radius: 40px;
+    color: #DDDDDD;
+    background-color: #002277;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    }
+
+    button:hover{
+    background: var();
+    letter-spacing: 0.25em;
+    box-shadow: 0px 0px 15px #002277;
+    }
+
+    button:active{
+    transform: scale(0.9) rotate(1deg);
+
+    }
+
+    input:hover{
+    letter-spacing: 0.08em;
+    transition: 6s;
+    color: #002277;
+
+
+    }
+
+
+ </style>
+
+
+</head>
+<body>
+
+<div class="box-3">
+
+<br>
+<br>
+<br>
+
+<div class="box-1">
+    <br>
+<h1 align="center">BMI Berechner</h1>
+
+
+    <div align="center" style="font-size:30px; text-decoration: none;">Geschlecht</div>
+<br>
+<div align="center">
+     <select name="geschlecht">
+       <option  value="mask">Männlich</option>
+       <option  value="fem">Weiblich</option>
+       <option  value="-">-</option>
+     </select>
+</div>
+<br>
+<br>
+
+      <div align="center" style="font-size:30px">Gewicht* (Kg)</div>
+<br>
+        <div align="center" >
+         <input type="number" id="weight"  required>
+        </div>
+<br>
+<br>
+      <div align="center" style="font-size:30px">Größe* (cm)</div>
+<br>
+        <div  align="center" >
+         <input type="number" id="height" required>
+        </div>
+<br>
+<br>
+<div align="center">
+   <button id="btn">Berechnen</button>
+</div>
+
+<br>
+
+    <div id="result" align="center" style="font-size: 24px;"></div>
+
+</div>
+
+<div class="box-2">
+    <h1 align="center">BMI</h1>
+    <h3 align="center">Der Body Mass Index (BMI) ist eine gängige Methode zur Bewertung des Körpergewichts in Relation zur Körpergröße. Diese einfache Formel wird verwendet, um grob einzuschätzen, ob eine Person ein gesundes Gewicht hat. Der BMI wird berechnet, indem das Gewicht in Kilogramm durch das Quadrat der Körpergröße in Metern geteilt wird.
+
+Die BMI-Kategorien sind in Bereiche eingeteilt, die auf allgemeinen Gesundheitsrichtlinien basieren. Ein BMI unter 18,5 gilt als Untergewicht, ein BMI zwischen 18,5 und 24,9 wird als normal betrachtet, ein BMI zwischen 25 und 29,9 deutet auf Übergewicht hin, und ein BMI von 30 oder höher wird als Adipositas (Fettleibigkeit) klassifiziert.
+
+Es ist wichtig zu beachten, dass der BMI nur eine grobe Schätzung ist und nicht alle individuellen Unterschiede berücksichtigt, wie beispielsweise Muskelmasse oder die Verteilung von Fettgewebe im Körper. Menschen mit einem hohen Muskelanteil können einen höheren BMI haben, ohne tatsächlich übergewichtig zu sein. Daher sollte der BMI immer im Zusammenhang mit anderen Gesundheitsfaktoren betrachtet werden.
+
+Trotz seiner Einschränkungen bleibt der BMI eine nützliche erste Einschätzung des Körpergewichts und wird weltweit häufig in der medizinischen Praxis sowie in der öffentlichen Gesundheitsvorsorge verwendet. Es ist jedoch wichtig, individuelle Gesundheitsziele und -risiken mit einem Fachmann zu besprechen, um eine umfassendere Beurteilung zu erhalten.</h3>
+
+</div>
+
+</div>
+
+</body>
+</html>
